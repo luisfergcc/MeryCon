@@ -9,7 +9,7 @@ App personal (PWA) para el seguimiento diario de salud, actividad, ejercicio por
 ## Publicar en GitHub Pages
 
 1. En GitHub → **New repository** → nombre `merycon` → Public → Create.
-2. **Add file → Upload files** → arrastra el **contenido** de esta carpeta (`index.html`, `sw.js`, `manifest.webmanifest`, `README.md`, `.gitignore` y las carpetas `css`, `js`, `icons`) → Commit.
+2. **Add file → Upload files** → arrastra el **contenido** de esta carpeta (`index.html`, `sw.js`, `manifest.webmanifest`, `README.md`, `.gitignore` y el resto de archivos (todo está en la misma carpeta, sin subcarpetas)) → Commit.
 3. **Settings → Pages** → Source: *Deploy from a branch* → Branch `main` / `(root)` → Save.
 4. En 1-2 minutos estará en `https://luisfergcc.github.io/merycon/`.
 

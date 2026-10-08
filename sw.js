@@ -1,10 +1,10 @@
 /* MeryCon — service worker: funciona sin conexión.
    Al publicar cambios, sube el número de CACHE para que el iPhone descargue la versión nueva. */
-const CACHE = 'merycon-v1';
+const CACHE = 'merycon-v2';
 const ASSETS = [
-  './', './index.html', './manifest.webmanifest', './css/app.css',
-  './js/data.js', './js/core.js', './js/app.js', './js/views-hoy.js', './js/views-ejercicio.js', './js/views-evol.js', './js/views-ficha.js', './js/boot.js',
-  './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'
+  './', './index.html', './manifest.webmanifest', './app.css',
+  './data.js', './core.js', './app.js', './views-hoy.js', './views-ejercicio.js', './views-evol.js', './views-ficha.js', './boot.js',
+  './icon-192.png', './icon-512.png', './apple-touch-icon.png'
 ];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => {
